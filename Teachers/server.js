@@ -16,6 +16,9 @@ const port = 3000;
 app.set('view engine', 'pug');
 app.set('views', path.join(__dirname + '/views'));
 
+// require dotenv.
+require('dotenv').config();
+
 // Mongoose  connection.
 mongoose.connect(process.env.DATABASE, {
     useNewUrlParser: true,
@@ -36,9 +39,14 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname + '/public')));
 app.use('/public/imagefiles', express.static(__dirname + '/public/imagefiles'));
 
+// Requiring the routes.
+const TeacherRegRoutes = require('./routes/TeachersRegRoutes');
 
+// Requiring the models.
+const TeacherReg = require('./models/TeachersRegModel');
 
 // Routes
+app.use('/', TeacherRegRoutes);
 
 
 
