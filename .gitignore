@@ -1,3 +1,5 @@
 Teachers/.env
 Teachers/node_modules
 .DS_Store
+Nurses/node_modules
+Nurses/.env
