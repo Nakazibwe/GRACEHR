@@ -1,0 +1,121 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title  Teachers Registration 
+    link(rel='stylesheet' href='/cssfiles/bootstrap.min.css')
+    link(rel='stylesheet' href='/cssfiles/index.css')
+  body
+    .container
+      form#form-id(action='/'  method = 'POST' name='teacherregistation')
+        .row
+          .col-lg-5.first-left-div
+            img(src='/imagefiles/ugandaflag.png' width='316px' height='99px' alt='ugandaflag')
+          .col-lg-2.first-middle-div
+            img(src='/imagefiles/courtofarms.png' width='100px' height='99px' alt='court of arms')
+          .col-lg-5.first-right-div
+            img(src='/imagefiles/ugandaflag.png' width='316px' height='99px' alt='ugandaflag')
+        .row
+          .col-lg-2.second-left-div
+          .col-lg-8.second-middle-div
+            p Ministry of Education
+            h3 TEACHERS REGISTRATION
+            p Government Worker Registration form
+          .col-lg-2.second-right-div
+        .row
+          .col-lg-2.third-left-div
+          #success-div.col-lg-8.third-middle-div
+          .col-lg-2.third-right-div
+        .row
+          .col-lg-2.fourth-left-div
+          .col-lg-8.fourth-middle-div
+            .form-control
+              .left-input-div
+                label(for='') First name
+                br
+                input(type='text' name='firstname')
+                br
+                small#firstname-error
+              .right-input-div
+                label(for='') Last name
+                br
+                input(type='text' name='lastname')
+                br
+                small#lastname-error
+          .col-lg-2.fourth-right-div
+        .row
+          .col-lg-2.fifth-left-div
+          .col-lg-8.fifth-middle-div
+            .form-control
+              .left-input-div
+                label(for='') Date of birth
+                br
+                input(type='date' name='teacherdob')
+                br
+                small#dob-error
+              .right-input-div
+                label(for='') District
+                br
+                input(type='text' name='district')
+                br
+                small#district-error
+          .col-lg-2.fifth-right-div
+        .row
+          .col-lg-2.sixth-left-div
+          .col-lg-8.sixth-middle-div
+            .form-control
+              .left-input-div
+                label(for='') Experience (years)
+                br
+                input(type='number' name='experience')
+                br
+                small#experience-error
+              .right-input-div
+                label(for='') Nationality
+                br
+                input(type='text' name='nationality')
+                br
+                small#nationality-error
+          .col-lg-2.sixth-right-div
+        .row
+          .col-lg-2.seventh-left-div
+          .col-lg-8.seventh-middle-div
+             p Gender
+          .col-lg-2.seventh-right-div
+          .col-lg-2.eight-left-div
+          .col-lg-8.eight-middle-div
+            .form-control
+              .male-section
+                label.form-check-label(for='male-gender')
+                  | Male
+                input#male-gender.form-check-input(type='radio' name='gender' value='Male' checked)
+              .female-section
+                label.form-check-label(for='female-gender')
+                  | Female
+                input#female-gender.form-check-input(type='radio' name='gender' value='Female')
+          .col-lg-2.eight-right-div.
+        .row
+          .col-lg-2.ninth-left-div
+          .col-lg-8.ninth-middle-div
+            label(for='') Highest Qualification
+            br
+            select#qualify(name='qualification')
+              option(value='default')  --Select Qualification-- 
+              option(value='Certificate') Certificate
+              option(value='Diploma') Diploma
+              option(value='Bachelors') Bachelors
+              option(value='PHD') PHD
+              option(value='Doctorate') Doctorate
+            small#qualification-error
+          .col-lg-2.ninth-right-div
+        .row
+          .col-lg-2.tenth-left-div
+          .col-lg-8.tenth-middle-div
+            .form-control
+              .inner-left-div
+              input.inner-right-div(type='submit' value='Register')
+          .col-lg-2.tenth-right-div
+    script(src='/javaScriptfiles/bootstrap.min.js')
+    script(src='/javaScriptfiles/index.js')
