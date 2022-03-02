@@ -34,10 +34,10 @@ mongoose.connection
   });
 
 // Requiring routes.
-const TemplateRoutes = require('./routes/templateRoutes');
+const NursesRegRoutes = require('./routes/NurseRegRoutes');
 
 // Requiring models.
-const TemplateReg = require('./models/templateModels');
+const NursesReg = require('./models/NurseRegModels');
 
 
 // Configurations.
@@ -52,11 +52,9 @@ app.use(express.static(path.join(__dirname + '/public')));
 app.use('/public/imagefiles', express.static(__dirname + '/public/imagefiles'));
 
 // Routes for the project.
-// app.use('/', TemplateRoutes);
+app.use('/', NursesRegRoutes);
 
-app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/views/index.html');
-});
+
 
 
 

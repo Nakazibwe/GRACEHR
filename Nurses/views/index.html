@@ -1,12 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template Document</title>
+    <title>Nurse Registration</title>
+    <link rel="stylesheet" href="/cssfiles/bootstrap.min.css">
+    <link rel="stylesheet" href="/cssfiles/index.css">
 </head>
+
 <body>
-    <h1>TEMPLATE FILE</h1>
+
+    <div class="container">
+        <form action="" name="nurseregistration" id="form-id">
+            <div class="row">
+                <div class="col-lg-5 first-left-div"><img src="/imagefiles/ugandaflag.png" width="316px" height="99px"
+                        alt="ug-flag"></div>
+                <div class="col-lg-2 first-middle-div"><img src="/imagefiles/courtofarms.png" width="100px"
+                        height="99px" alt="ug-courtofarms"></div>
+                <div class="col-lg-5 first-right-div"><img src="/imagefiles/ugandaflag.png" width="317px" height="99px"
+                        alt="ug-flag"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2 mid-left-div"></div>
+                <div class="col-lg-8 mid-middle-div">
+                    <p>Ministry of Education</p>
+                    <h3>NURSES REGISTRATION</h3>
+                    <p>Government Worker Registration form</p>
+
+                </div>
+                <div class="col-lg-2 mid-right-div"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2 second-left-div"></div>
+                <div class="col-lg-8 second-middle-div" id="success-div"></div>
+                <div class="col-lg-2 second-right-div"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2 third-left-div"></div>
+                <div class="col-lg-8 third-middle-div">
+                    <div class="form-control">
+                        <div class="left-input-div">
+                            <label for="">First name</label><br>
+                            <input type="text" name="firstname"><br>
+                            <small id="firstname-error"></small>
+                        </div>
+                        <div class="right-input-div">
+                            <label for="">Last name</label><br>
+                            <input type="text" name="lastname"><br>
+                            <small id="lastname-error"></small>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-2 third-right-div"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2 fourth-left-div"></div>
+                <div class="col-lg-8 fourth-middle-div">
+                    <div class="form-control">
+                        <div class="left-input-div">
+                            <label for="">Date of Birth</label><br>
+                            <input type="date" name="dob"><br>
+                            <small id="dob-error"></small>
+                        </div>
+                        <div class="right-input-div">
+                            <label for="">District</label><br>
+                            <input type="text" name="district"><br>
+                            <small id="district-error"></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 fourth-right-div"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2 fifth-left-div"></div>
+                <div class="col-lg-8 fifth-middle-div">
+                    <div class="form-control">
+                        <div class="left-input-div">
+                            <label for="">Experience (years)</label><br>
+                            <input type="date" name="experience"><br>
+                            <small id="experience-error"></small>
+                        </div>
+                        <div class="right-input-div">
+                            <label for="">Nationality</label><br>
+                            <input type="text" name="nationality"><br>
+                            <small id="nationality-error"></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 fifth-right-div"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2 sixth-left-div"></div>
+                <div class="col-lg-8 sixth-middle-div">
+                    <p>Gender</p>
+                </div>
+                <div class="col-lg-2 sixth-right-div"></div>
+                <div class="col-lg-2 seventh-left-div"></div>
+                <div class="col-lg-8 seventh-middle-div">
+                    <div class="form-control">
+
+                        <div class="male-gender">
+                            <label class="form-check-label" for="male">Male</label>
+                            <input class="form-check-input" type="radio" name="gender" id="male" value="Male" checked>
+                        </div>
+                        <div class="female-gender">
+                            <label class="form-check-label" for="female">Female</label>
+                            <input class="form-check-input" type="radio" name="gender" id="female" value="Female">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-2 seventh-right-div"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2 eighth-left-div"></div>
+                <div class="col-lg-8 eighth-middle-div">
+                    <label for="">Qualification</label>
+                    <select name="qualification" id="">
+                        <option value="default"> --Select Qualification-- </option>
+                        <option value="Certificate">Certificate</option>
+                        <option value="Diploma">Diploma</option>
+                        <option value="Bachelors">Bachelors</option>
+                        <option value="PHD">PHD</option>
+                        <option value="Doctorate">Doctorate</option>
+                    </select>
+                    <small id="qualifiaction-error"></small>
+
+                </div>
+                <div class="col-lg-2 eighth-right-div"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2 ninth-left-div"></div>
+                <div class="col-lg-8 ninth-middle-div">
+                    <div class="form-control">
+                        <div class="left-input-div"></div>
+                        <input type="submit" value="Submit" class="right-input-div submit">
+                    </div>
+                </div>
+                <div class="col-lg-2 ninth-right-div"></div>
+            </div>
+
+        </form>
+
+    </div>
+    <script src="/javaScriptfiles/bootstrap.min.js"></script>
+    <script src="/javaScriptfiles/index.js"></script>
 </body>
+
 </html>

@@ -1,8 +1,9 @@
+/* eslint-disable no-console */
 const express = require('express');
 const mongoose = require('mongoose');
 
-// Require the model. 
-const TemplateReg = require('../models/templateModels');
+// Require the model.
+const NurseReg = require('../models/NurseRegModels');
 
 const router = express.Router();
 
@@ -13,7 +14,20 @@ router.get('/', (req, res) => {
 
 // post route.
 
-// router.post('/', async (req, res) => {
+router.post('/', async (req, res) => {
+  try {
+    const nurseReg = new NurseReg(req.body);
     
-// });
+    await nurseReg.save((err) => {
+      if (err) {
+        throw err;
+      }
+      res.redirect('/');
+    });
+  } catch (error) {
+    console.log(error);
+    res.status(400).send('Data not sent to DB');
+  }
+});
 module.exports = router;
+

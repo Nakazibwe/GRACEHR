@@ -1,0 +1,133 @@
+.container {
+  margin-top: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  width: 60%;
+  height: auto;
+  border: 1px solid #d3d3d3;
+}
+.first-left-div {
+  height: 100px;
+  padding: 0;
+  
+}
+
+.first-right-div {
+  height: 100px;
+  padding: 0;
+  
+}
+.row {
+  margin-bottom: 1%;
+  
+}
+.mid-middle-div {
+  text-align: center;
+  height: 100px;
+  
+}
+
+.fifth-middle-div {
+  padding: 0;
+  
+}
+.mid-middle-div p {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.mid-middle-div h3 {
+  margin-bottom: 0;
+  font-weight: 700;
+}
+
+small {
+  font-size: 16px;
+}
+
+.second-middle-div {
+  
+  height: 30px;
+  text-align: center;
+}
+
+.form-control {
+  display: flex;
+  padding: 0;
+  border-style: hidden;
+}
+.left-input-div {
+  margin-right: auto;
+  width: 45%;
+  
+}
+.right-input-div {
+  width: 45%;
+  
+}
+.third-middle-div {
+  padding: 0;
+  
+}
+
+.right-input-div input {
+  border: 1px solid #d3d3d3;
+  width: 100%;
+  height: 40px;
+}
+.left-input-div input {
+  border: 1px solid #d3d3d3;
+  width: 100%;
+  height: 40px;
+}
+label {
+  font-size: 18px;
+}
+.fourth-middle-div {
+  padding: 0;
+  
+}
+.sixth-middle-div {
+    padding: 0;
+    border-bottom: 2px solid black;
+}
+.sixth-middle-div p{
+    margin-bottom: 0;
+}
+.male-gender{
+width:45%;
+margin-right: auto;
+
+}
+.female-gender{
+    width:45%;
+    
+}
+.seventh-middle-div{
+    padding: 0;
+    
+}
+.form-check-label{
+margin-right: 1%;
+}
+.eighth-middle-div{
+    padding: 0;
+   
+}
+select{
+    border: 1px solid #d3d3d3;
+    text-align: center;
+    padding:0;
+    width:100%;
+    height:30px;
+}
+.ninth-middle-div{
+    padding: 0;
+   
+}
+.submit{
+font-weight: 600;
+color:#fff;
+border:1px solid #1f75fe;
+background-color: #1f75fe;
+}
